@@ -3,6 +3,7 @@ const tabs = document.querySelectorAll('.card-detail__change')
 const tabsTitle = document.querySelector('.card-details__title')
 const tabsPrice = document.querySelector('.card-details__price')
 const tabsImage = document.querySelector('.card__image_item')
+const pageTitle = document.querySelector('title')
 
 const tabsOptions = [
   {
@@ -30,7 +31,9 @@ const changeContent = (index) => {
   tabsTitle.textContent = `Смартфон Apple iPhone 13 Pro ${tabsOptions[index].memory}GB ${tabsOptions[index].name}`;
   tabsPrice.textContent = `${tabsOptions[index].price}₽`;
 
-  tabsImage.setAttribute('src', tabsOptions[index].image)
+  tabsImage.setAttribute('src', tabsOptions[index].image);
+
+  pageTitle.textContent = `IPhone ${tabsOptions[index].name}`
 };
 
 const changeActiveTabs = (indexClickedTab) => {
