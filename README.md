@@ -1,0 +1,2 @@
+# iPhonePromoJS
+Знакомство с JS
