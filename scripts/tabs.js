@@ -27,7 +27,6 @@ const tabsOptions = [
 ]
 
 const changeContent = (index) => {
-  console.log(tabsOptions[index].name);
   tabsTitle.textContent = `Смартфон Apple iPhone 13 Pro ${tabsOptions[index].memory}GB ${tabsOptions[index].name}`;
   tabsPrice.textContent = `${tabsOptions[index].price}₽`;
 
