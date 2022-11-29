@@ -37,7 +37,13 @@ const sendForm = () => {
       },
     })
       .then(() => {
-        console.log('Отправлено');
+
+        modal.style.display = 'none'
+        labels.forEach(label => {
+          const input = label.querySelector('input')
+
+          input.value = ''
+        })
       })
   })
 }
